@@ -686,3 +686,255 @@
 //     printf("\nThe Fabonacci number at position %d is %d: .\n", nthfabonacci, current);
 //     return 0;
 // }
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// create the following pattern:
+// *****
+// *****
+// *****
+// *****
+// *****
+
+// #include <stdio.h>
+// int main()
+// {
+//     for (int i = 1; i <= 5; i++)
+//     {
+//         for (int j = 1; j <= 5; j++)
+//         {
+//             printf("*"); // printing star in runnig column
+//         }
+//         printf("\n"); // Backslash for breaking line after completing one row
+//     }
+//     return 0;
+// }
+
+/////////////////////////////////////////////////////////////////////////////////
+
+// create the following pattern:
+// *
+// **
+// ***
+// ****
+// *****
+
+// #include <stdio.h>
+// int main()
+// {
+//     for (int i = 1; i <= 5; i++) // 5 rows
+//     {
+//         for (int j = 1; j <= i; j++) // row == cols
+//         {
+//             printf("*"); // printing star in runnig column
+//         }
+//         printf("\n"); // Backslash for breaking line after completing one row
+//     }
+//     return 0;
+// }
+
+///////////////////////////////////////////////////////////////////////////////////
+
+// Create the following output
+// *****
+// ****
+// ***
+// **
+// *
+
+// #include <stdio.h>
+// int main()
+// {
+//     for (int i = 5; i >= 0; i--)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             printf("*"); // printing star in runnig column
+//         }
+//         printf("\n"); // Backslash for breaking line after completing one row
+//     }
+//     return 0;
+// }
+
+///////////////////////////////////////////////////////////////////////////////////
+
+// Create the Multiplication Table Like
+// 1 2 3 4 5 6 7 8 9 10
+// 2 4 6 8 10 12 14 16 18 20
+// 3 6 9 12 15 18 21 24 27 30
+// 4 8 12 16 20 24 28 32 36 40
+// 5 10 15 20 25 30 35 40 45 50
+
+// #include <stdio.h>
+// int main()
+// {
+//     for (int i = 1; i <= 5; i++) // rows =5
+//     {
+//         for (int j = 1; j <= 10; j++) // cols = 10
+//         {
+//             printf("%d ", i * j); // Mutiplying i*j for creating Multiplication table
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+///////////////////////////////////////////////////////////////////////////////////
+
+// Create the Following Output
+//  1 2 3
+//  2 4 6
+//  3 6 9
+
+// #include <stdio.h>
+// int main()
+// {
+//     for (int i = 1; i <= 3; i++)
+//     {
+//         for (int j = 1; j <= 3; j++)
+//         {
+//             printf("%d ", i * j); // Mutiplying i*j
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+/////////////////////////////////////////////////////////////////////////////////
+
+// Create the Following Output
+// 1 1 1 1 1
+// 2 2 2 2 2
+// 3 3 3 3 3
+// 4 4 4 4 4
+// 5 5 5 5 5
+
+// #include <stdio.h>
+// int main()
+// {
+//     for (int i = 1; i <= 5; i++)
+//     {
+//         for (int j = 1; j <= 5; j++)
+//         {
+//             printf("%d ", i); // just printing i
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+//////////////////////////////////////////////////////////////////////////////
+
+// Create the Following Output
+// 2 3 4 5
+// 3 4 5
+// 4 5
+// 5
+
+// #include <stdio.h>
+// int main()
+// {
+//     for (int i = 1; i <= 5; i++)
+//     {
+//         for (int j = (i + 1); j <= 5; j++)
+//         {
+//             printf("%d ", j);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+/////////////////////////////////////////////////////////////////////////
+
+// Create the following table
+// 1 2 3 4 5 6 7 8 9 10
+// 11 12 13 14 15 16 17 18 19 20
+// 21 22 23 24 25 26 27 28 29 30
+// 31 32 33 34 35 36 37 38 39 40
+// 41 42 43 44 45 46 47 48 49 50
+// 51 52 53 54 55 56 57 58 59 60
+// 61 62 63 64 65 66 67 68 69 70
+// 71 72 73 74 75 76 77 78 79 80
+// 81 82 83 84 85 86 87 88 89 90
+// 91 92 93 94 95 96 97 98 99 100
+
+// #include <stdio.h>
+// int main()
+// {
+//     for (int i = 1; i <= 10; i++)
+//     {
+//         for (int j = 1; j <= 10; j++)
+//         {
+//             printf("%d ", 10 * (i - 1) + j);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+///////////////////////////////////////////////////////////////////////////
+
+// Create the following pattern
+//         1
+//        121
+//       12321
+//      1234321
+//     123454321
+//    12345654321
+//   1234567654321
+//  123456787654321
+// 12345678987654321
+
+// #include <stdio.h>
+// int main()
+// {
+//     int i, j;
+//     for (i = 1; i <= 9; ++i) // Outer loop
+//     {
+
+//         for (j = 1; j <= (9 - i); ++j) // First loop
+
+//             printf(" ");
+
+//         for (j = 1; j <= i; ++j)
+//             printf("%d", j); // Second loop
+
+//         for (j = (i - 1); j >= 1; --j)
+//             printf("%d", j); // Third loop
+
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+///////////////////////////////////////////////////////////////////////////
+
+// Create the Hollow Pyramid
+//     *
+//    * *
+//   *   *
+//  *     *
+// *********
+              
+// #include <stdio.h>
+// int main()
+// {
+//     int i, j, n = 5;
+//     for (i = 1; i <= n; i++)
+//     {
+//         for (j = i; j < n; j++)
+//             printf(" ");
+//         // Outer loop for rows
+//         // Loop for spaces
+//         for (j = 1; j <= (2 * i - 1); j++)
+//         { 
+//             // Loop for stars /spaces 
+//             if (j == 1 || j == (2 * i - 1) || i == n)
+//                 printf("*");
+//             else 
+//             printf(" ");
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
