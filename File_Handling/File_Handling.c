@@ -1,250 +1,50 @@
-// Opening of file for writing with "w"
+
+/////////////////////////////////////////////////////////////
+// Create a file and write your name using "w"
 // #include <stdio.h>
 // int main()
 // {
-//     FILE *fp;
-//     fp = fopen("data.txt", "w");
+//     FILE *fp;                       // pointing to FILE
+//     fp = fopen("my name.txt", "w"); // creating file if it is not exits with my name.txt
 
-//     if (fp == NULL)
+//     if (fp == NULL) // Checking for file that is NULL or NOT
 //     {
-//         printf("Error Opening file!");
-//         return 1;
-//     }
-//     printf("File opened successfully.");
-//     fclose(fp);
-//     return 0;
-// }
-///////////////////////////////
-// Example of file writing "fwrite()"
-// #include <stdio.h>
-// int main()
-// {
-//     FILE *fp;
-//     int number[5] = {1,2,3,4,5};
-//     fp = fopen("number.bin", "wb");
-//     if (fp == NULL)
-//     {
-//         printf("Error opening file!");
-//         return 1;
-//     }
-//     fwrite(number, sizeof(int), 5, fp);
-//     fclose(fp);
-//     return 0;
-// }
-/////////////////////////////////////////
-// example of "fread()"
-// #include <stdio.h>
-// int main()
-// {
-//     FILE* fp;
-//     int numbers[5];
-
-//     fp = fopen("number.bin", "rb");
-//     if (fp == NULL)
-//     {
-//         printf("File not found");
+//         printf("Error in Creating file!");
 //         return 1;
 //     }
 
-//     fread(numbers, sizeof(int), 5, fp);
-//     fclose(fp);
+//     // Writing Data in FILE
+//     fprintf(fp, "My Name is Abdullah Hussian"); // Data write in fp
+//     fclose(fp);                                 // Closing File after giving content
 
-//     for (int i = 0; i < 5; i++)
-//     {
-//         printf("%d ", numbers[i]);
-//     }
+//     printf("Data Entered Successfully!");
 //     return 0;
 // }
-/////////////////////////
-// example of "fseek()"
-// #include <stdio.h>
-// int main()
-// {
-//     FILE *fp;
-//     char ch;
-//     fp = fopen("sample.txt", "r");
-//     if (fp == NULL)
-//     {
-//         printf("File no found!");
-//         return 1;
-//     }
-//     fseek(fp, 5, SEEK_SET);
-//     ch = fgetc(fp);
-//     printf("Character at position 5: %c\n", ch);
-//     fclose(fp);
-//     return 0;
-// }
-/////////////////////////////////////
-// example of "fprintf()"
-// #include <stdio.h>
-// int main()
-// {
-//     FILE *fp;
-//     fp = fopen("student.txt", "r");
-//     if (fp == NULL)
-//     {
-//         printf("Error opening file!");
-//         return 1;
-//     }
-//     int roll = 101234;
-//     char name[] = "M Ali";
-//     fprintf(fp, "Roll No: %d\nName: %s\n", roll, name);
-//     fclose(fp);
-//     return 0;
-// }
-/////////////////////////////////////////////
-// Example of fwrite()
-// #include <stdio.h>
-// int main()
-// {
-//     FILE *fp;
-//     fp = fopen("student.txt", "w");
+/////////////////////////////////////////////////////////////
 
-//     if (fp == NULL)
-//     {
-//         printf("Error opening file!");
-//         return 1;
-//     }
-
-//     fprintf(fp, "Hello! this is my first file!\n");
-//     fprintf(fp, "file handling in c ia easy");
-//     fclose(fp);
-//     printf("Data written successfully!");
-//     return 0;
-// }
-///////////////////////////////////////////////
-// Example of "fread()" "r"
-// #include <stdio.h>
-// int main()
-// {
-//     FILE *fp;
-//     char info[100];
-//     fp = fopen("myfile.txt", "r");
-//     if (fp == NULL)
-//     {
-//         printf("Error!");
-//         return 1;
-//     }
-
-//     while (fgets(info, 100, fp))
-//     {
-//         printf("%s ", info);
-//     }
-//     fclose(fp);
-//     return 0;
-// }
-////////////////////////////////////
-// Append to a file
-// #include <stdio.h>
-// int main()
-// {
-//     FILE *fp;
-//     fp = fopen("myfile.txt", "a");
-
-//     if (fp == NULL)
-//     {
-//         printf("Error");
-//         return 1;
-//     }
-
-//     fprintf(fp, "this line is added later\n");
-//     fclose(fp);
-//     return 0;
-// }
-//////////////////////////////////
-// Word counting in a file
-// #include <stdio.h>
-// #include <ctype.h>
-// int main()
-// {
-//     FILE *fp;
-//     char ch;
-//     int words = 0;
-//     int inword = 0;
-
-//     fp = fopen("myfile.txt", "r");
-
-//     if (fp == NULL)
-//     {
-//         printf("Error!\n");
-//         return 1;
-//     }
-
-//     while (ch = fgetc(fp) != EOF)
-//     {
-//         if (isspace(ch))
-//         {
-//             inword = 0;
-//         }
-//         else if (inword == 0)
-//         {
-//             inword = 1;
-//             words++;
-//         }
-//     }
-//     fclose(fp);
-//     printf("Total words: %d\n", words);
-//     return 0;
-// }
-////////////////////////////////////////////
-// Copy One File to Another
-// #include <stdio.h>
-// int main()
-// {
-//     FILE *source = fopen("source.txt", "r");
-//     FILE *destination = fopen("copy.txt", "w");
-
-//     if (source == NULL || destination == NULL)
-//     {
-//         printf("Error!\n");
-//         return 1;
-//     }
-
-//     char ch;
-
-//     while ((ch = fgetc(source) != EOF))
-//     {
-//         fputc(ch, destination);
-//     }
-//     fclose(source);
-//     fclose(destination);
-//     printf("File Copied Successfully!");
-//     return 0;
-// }
-///////////////////////////////////////
-// Count Lines, Words, Characters
+// Read and display file content using "r"
 #include <stdio.h>
-#include <ctype.h>
-int main()
-{
-    FILE *fp;
-    fp = fopen("myfile.txt", "r");
-    if (!fp)
-    {
-        printf("Error!");
-        return 1;
-    }
+// int main()
+// {
+//     FILE *fp;                       // pointing to FILE
+//     fp = fopen("my name.txt", "r"); //// creating file if it is not exits with my name.txt
 
-    char ch;
-    int lines = 0, words = 0, inword = 0, characters = 0;
+//     int ch;
 
-    while ((ch = fgetc(fp) != EOF))
-    {
-        characters++;
-        if (ch == '\n')
+//     if (fp == NULL) // Checking for file that is NULL or NOT
+//     {
+//         printf("File not Found!");
+//         return 1;
+//     }
 
-            lines++;
+//     // Reading Data From File
+//     while ((ch = fgetc(fp)) != EOF)
+//     {
+//         putchar(ch);
+//     }
 
-        if (isspace(ch))
+//     fclose(fp); // Closing File
+//     return 0;
+// }
+///////////////////////////////////////////////////////////////
 
-            inword = 0;
-
-        else if (inword == 0)
-        {
-            inword++;
-            words++;
-        }
-    }
-    fclose(fp);
-    printf("Lines: %d\nWords: %d\nCharacters: %d\n", lines, words, characters);
-}

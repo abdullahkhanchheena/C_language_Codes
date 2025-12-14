@@ -640,3 +640,49 @@
 //   }
 //   return 0;
 // }
+// ///////////////////////////////////////////////////////////////////////////////////////////
+
+// Fabonacci Nmbers
+#include <stdio.h>
+int main()
+{
+    // Declaring variables
+    int previous1, previous2, current;
+    int counter, nthfabonacci;
+
+    // taking first two numbers
+    printf("Enter First Fabonacci Number: ");
+    scanf("%d", &previous1);
+    printf("Enter Second Fabonacci Number: ");
+    scanf("%d", &previous2);
+
+    // Showing first two numbers
+    printf("\nFirst two Fabonacci Numbers are: %d and %d:\n", previous1, previous2);
+
+    // Taking desired number fro user
+    printf("Enter desired Fabonacci Number: ");
+    scanf("%d", &nthfabonacci);
+
+    // Applying conditions and Operations
+    if (nthfabonacci == 1)
+    {
+        current = previous1;
+    }
+    else if (nthfabonacci == 2)
+    {
+        current == previous2;
+    }
+    else
+    {
+        counter = 3;
+        while (counter <= nthfabonacci)
+        {
+            current = previous2 + previous1;
+            previous1 = previous2;
+            previous2 = current;
+            counter++;
+        } // end while
+    } // end else
+    printf("\nThe Fabonacci number at position %d is %d: .\n", nthfabonacci, current);
+    return 0;
+}

@@ -185,7 +185,7 @@
 //     printf("The Square of %d is: %d\n", x, sq);
 //     return 0;
 // }
-
+////////////////////////////////////////////////
 // //libraries
 // #include<stdio.h>
 // #include<math.h>
