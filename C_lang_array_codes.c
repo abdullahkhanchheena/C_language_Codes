@@ -383,29 +383,29 @@
 // ///////////////////////////////////////////////////////////////////////
 
 // //Finding Sum of all odd values in an Array
-#include <stdio.h>
-int main()
-{
-    int n;
-    printf("Enter the size of Array: ");
-    scanf("%d", &n);
+// #include <stdio.h>
+// int main()
+// {
+//     int n;
+//     printf("Enter the size of Array: ");
+//     scanf("%d", &n);
 
-    int arr[n], odd_sum = 0;
+//     int arr[n], odd_sum = 0;
 
-    //taking input
-    for (int i = 0; i < n; i++)
-    {
-        printf("Input element in index %d = ", i);
-        scanf("%d", &arr[i]);
-    }
-    //Calculating Sum of odd
-    for (int i = 0; i < n; i++)
-    {
-        if (arr[i] % 2 != 0)
-        {
-            odd_sum += arr[i];
-        }
-    }
-    printf("Sum of All odd values is: %d\n", odd_sum);
-    return 0;
-}
+//     //taking input
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Input element in index %d = ", i);
+//         scanf("%d", &arr[i]);
+//     }
+//     //Calculating Sum of odd
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (arr[i] % 2 != 0)
+//         {
+//             odd_sum += arr[i];
+//         }
+//     }
+//     printf("Sum of All odd values is: %d\n", odd_sum);
+//     return 0;
+// }
