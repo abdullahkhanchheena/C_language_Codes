@@ -1,7 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 // //Initializing and printing addresses of array addresses of array
 // #include <stdio.h>
 // int main()
@@ -15,26 +13,20 @@
 //     printf("%p\n", &arr[4]);
 //     return 0;
 // }
-=======
-=======
->>>>>>> a15234252306f2e6026d07c38d4eaf0091e4b1d5
+////////////////////////////////////////////////////////
 //Initializing and printing addresses of array addresses of array
-#include <stdio.h>
-int main()
-{
-    int arr[5] = {1, 1, 2, 1, 1};
-    // printing Addresses of all Arrays
-    printf("%p\n", &arr[0]);
-    printf("%p\n", &arr[1]);
-    printf("%p\n", &arr[2]);
-    printf("%p\n", &arr[3]);
-    printf("%p\n", &arr[4]);
-    return 0;
-}
-<<<<<<< HEAD
->>>>>>> a152342 (Updated Files)
-=======
->>>>>>> a15234252306f2e6026d07c38d4eaf0091e4b1d5
+// #include <stdio.h>
+// int main()
+// {
+//     int arr[5] = {1, 1, 2, 1, 1};
+//     // printing Addresses of all Arrays
+//     printf("%p\n", &arr[0]);
+//     printf("%p\n", &arr[1]);
+//     printf("%p\n", &arr[2]);
+//     printf("%p\n", &arr[3]);
+//     printf("%p\n", &arr[4]);
+//     return 0;
+// }
 
 /////////////////////////////////////////////////
 
