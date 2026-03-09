@@ -154,11 +154,16 @@ int main() {
 void initializeSystem() {
     // Initialize all arrays
 <<<<<<< HEAD
+<<<<<<< HEAD
     for(int i = 0; i < MAX_STUDENTS; i++) {
 =======
     for(int i = 0; i < MAX_STUDENTS; i++) 
 	{
 >>>>>>> a152342 (Updated Files)
+=======
+    for(int i = 0; i < MAX_STUDENTS; i++) 
+	{
+>>>>>>> a15234252306f2e6026d07c38d4eaf0091e4b1d5
         for(int j = 0; j < MAX_COURSES; j++) {
             marks[i][j] = -1; // -1 indicates not enrolled
             attendance[i][j] = -1;
@@ -890,7 +895,11 @@ void displayMainMenu() {
     printf("| 0. Exit System                                               |\n");
     printf("================================================================\n");
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> a152342 (Updated Files)
+=======
+}
+>>>>>>> a15234252306f2e6026d07c38d4eaf0091e4b1d5

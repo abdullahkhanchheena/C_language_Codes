@@ -1,6 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // //Initializing and printing addresses of array addresses of array
 // #include <stdio.h>
 // int main()
@@ -15,6 +16,8 @@
 //     return 0;
 // }
 =======
+=======
+>>>>>>> a15234252306f2e6026d07c38d4eaf0091e4b1d5
 //Initializing and printing addresses of array addresses of array
 #include <stdio.h>
 int main()
@@ -28,7 +31,10 @@ int main()
     printf("%p\n", &arr[4]);
     return 0;
 }
+<<<<<<< HEAD
 >>>>>>> a152342 (Updated Files)
+=======
+>>>>>>> a15234252306f2e6026d07c38d4eaf0091e4b1d5
 
 /////////////////////////////////////////////////
 
